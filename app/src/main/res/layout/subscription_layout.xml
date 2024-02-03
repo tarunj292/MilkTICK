@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:id="@+id/subscriptionRelativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/subscriptionImg"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:src="@drawable/a2"/>
+
+        <TextView
+            android:id="@+id/subscriptionTitle"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/subscriptionImg"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Double Toned Milk"/>
+
+        <TextView
+            android:id="@+id/subscriptionPrice"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/subscriptionTitle"
+            android:text="Price 100Rs."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/subscriptionBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subscriptionTitle"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@id/subscriptionImg"
+            android:text="Subscribe" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

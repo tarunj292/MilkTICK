@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/cartRelativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/cartImg"
+            android:layout_width="100dp"
+            android:layout_height="115dp"
+            android:src="@drawable/a2"/>
+
+        <TextView
+            android:id="@+id/cartTitle"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="25dp"
+            android:layout_toEndOf="@+id/cartImg"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="Double Toned Milk"/>
+
+        <TextView
+            android:id="@+id/cartPrice"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginStart="28dp"
+            android:layout_toEndOf="@+id/cartTitle"
+            android:text="Price 100Rs."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cartDropDown"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/cartTitle"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="23dp"
+            android:layout_toEndOf="@id/cartImg"
+            android:foregroundGravity="center_horizontal"
+            android:src="@drawable/add_button" />
+
+        <TextView
+            android:id="@+id/cartQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@id/cartPrice"
+            android:layout_marginTop="23dp"
+            android:layout_toEndOf="@id/cartDropDown"
+            android:gravity="center"
+            android:text="Qty: 99 "/>
+
+        <ImageView
+            android:id="@+id/cartDelete"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_below="@id/cartTitle"
+            android:layout_marginTop="23dp"
+            android:layout_toEndOf="@id/cartQuantity"
+            android:foregroundGravity="center_horizontal"
+            android:src="@drawable/delete_cart_quantity" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

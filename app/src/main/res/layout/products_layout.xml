@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pdtImg"
+        android:layout_width="100dp"
+        android:layout_height="115dp"
+        android:src="@drawable/a2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/pdtTitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Dry Fruit Shrikhand"
+        app:layout_constraintStart_toEndOf="@+id/pdtImg"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/pdtPrice"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="Price 100Rs."
+        app:layout_constraintStart_toEndOf="@id/pdtTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/pdtSubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginStart="25dp"
+        android:text="Subscribe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pdtImg" />
+
+    <Button
+        android:id="@+id/pdtBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Buy Once"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.524"
+        app:layout_constraintStart_toEndOf="@+id/pdtSubscribe" />
+
+    <ImageView
+        android:id="@+id/pdtDropDown"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/add_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/pdtQuantity"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/pdtQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:text="Qty: 99 "
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pdtDelete"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/pdtDelete"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/delete_cart_quantity"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="gone"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/productsrelativeLayout"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:layout_centerInParent="true">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/pdtImg"-->
+<!--            android:layout_width="100dp"-->
+<!--            android:layout_height="115dp"-->
+<!--            android:src="@drawable/a2" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/pdtTitle"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginStart="25dp"-->
+<!--            android:layout_toEndOf="@id/pdtImg"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16sp"-->
+<!--            android:text="Double Toned Milk" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/pdtPrice"-->
+<!--            android:layout_width="95dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_toEndOf="@id/pdtTitle"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textSize="16sp"-->
+<!--            android:text="Price 100Rs." />-->
+
+
+<!--        <Button-->
+<!--            android:id="@+id/pdtSubscribe"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/pdtTitle"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_toEndOf="@id/pdtImg"-->
+<!--            android:text="Subscribe" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/pdtBuy"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/pdtPrice"-->
+<!--            android:layout_marginStart="20dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:layout_toEndOf="@id/pdtSubscribe"-->
+<!--            android:text="Buy Once"-->
+<!--            android:visibility="visible"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/pdtDropDown"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_below="@id/pdtPrice"-->
+<!--            android:layout_marginStart="160dp"-->
+<!--            android:layout_marginTop="23dp"-->
+<!--            android:layout_toEndOf="@id/pdtImg"-->
+<!--            android:foregroundGravity="center_horizontal"-->
+<!--            android:src="@drawable/add_button"-->
+<!--            android:visibility="gone"/>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/pdtQuantity"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:layout_below="@id/pdtPrice"-->
+<!--            android:layout_marginTop="23dp"-->
+<!--            android:layout_toEndOf="@id/pdtDropDown"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Qty: 99 "-->
+<!--            android:visibility="gone"/>-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/pdtDelete"-->
+<!--            android:layout_width="40dp"-->
+<!--            android:layout_height="35dp"-->
+<!--            android:layout_below="@id/pdtTitle"-->
+<!--            android:layout_marginTop="23dp"-->
+<!--            android:layout_toEndOf="@id/pdtQuantity"-->
+<!--            android:foregroundGravity="center_horizontal"-->
+<!--            android:src="@drawable/delete_cart_quantity"-->
+<!--            android:visibility="gone"/>-->
+
+<!--    </RelativeLayout>-->
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

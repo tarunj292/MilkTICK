@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "814242965065",
+    "project_id": "milktick-project",
+    "storage_bucket": "milktick-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814242965065:android:ce85c2e5f0e51dd1bd8198",
+        "android_client_info": {
+          "package_name": "com.example.milktickproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgM_kQNn1tW9iHdzx1AUGO2CxSHvL2DoA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">MilkTick</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="click_to_login">Click To Login</string>
+    <string name="login">Login</string>
+    <string name="click_to_register"> Click To Register </string>
+    <string name="home">Home</string>
+    <string name="namaste_user">Namaste! User</string>
+    <string name="name">Name</string>
+    <string name="place_your_order">Place your Order</string>
+    <string name="show_subscriptions">Show Subscriptions</string>
+    <string name="add_your_holidays">Add Your\nHolidays</string>
+    <string name="view_order_statement">View Order\nStatement</string>
+    <string name="edit_your_subscription">Edit Your\nSubscription</string>
+    <string name="recharge_your_wallet">Recharge\nYour Wallet</string>
+    <string name="quick_actions">Quick Actions</string>
+    <string name="offers">Offers</string>
+    <string name="categories">Categories</string>
+    <string name="welcome">Welcome to MilkTick</string>
+    <string name="cart">CART</string>
+    <string name="history">History</string>
+    <string name="_200_rs">+ 200 Rs.</string>
+    <string name="_100_rs">+ 100 Rs.</string>
+    <string name="_500_rs">+ 500 Rs.</string>
+    <string name="add_balance">Add Balance</string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="your_balance_0rs">Your Balance 0Rs.</string>
+    <string name="recharge_amount">Recharge Amount</string>
+    <string name="you_can_also_select">You can also select</string>
+    <string name="selected_date">Selected Date</string>
+    <string name="subscribed">Subscribed</string>
+    <string name="browse_products">Browse Products</string>
+    <string name="shopping_cart_empty">Your Shopping Cart is empty.</string>
+</resources>
