@@ -20,7 +20,7 @@ class HomeActivity : AppCompatActivity() {
     private lateinit var mDbRef: DatabaseReference
     private lateinit var recyclerView: RecyclerView
     private lateinit var categoriesAdapter: CategoriesAdapter
-    private lateinit var offersHorizontaladapter: OffersHorizontalAdapter
+    private lateinit var offersHorizontalAdapter: OffersHorizontalAdapter
     private lateinit var productsList: ArrayList<Product>
     private lateinit var offersList: ArrayList<Offer>
 
@@ -98,9 +98,9 @@ class HomeActivity : AppCompatActivity() {
         offersList = arrayListOf()
 //        Recycler View for offers
         recyclerView = findViewById(R.id.offersRecyclerView)
-        offersHorizontaladapter = OffersHorizontalAdapter(offersList)
+        offersHorizontalAdapter = OffersHorizontalAdapter(offersList)
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        recyclerView.adapter = offersHorizontaladapter
+        recyclerView.adapter = offersHorizontalAdapter
 
 
         mDbRef.child("Offer").addValueEventListener(object : ValueEventListener {
@@ -112,7 +112,7 @@ class HomeActivity : AppCompatActivity() {
                         offersList.add(offer)
                     }
                 }
-                offersHorizontaladapter.notifyDataSetChanged()
+                offersHorizontalAdapter.notifyDataSetChanged()
             }
             override fun onCancelled(error: DatabaseError) {
                 // Handle the error, e.g., display a toast or log the error
